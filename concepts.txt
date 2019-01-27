@@ -1,0 +1,45 @@
+What is Git?
+    - Distributed source control system
+    - Massively sclaes
+    - open source
+    - Developed for linux project requirements
+    - most operations are local
+    - very fast
+    - active community
+    - Most popular DVCS, VCS
+
+ Repository contains the history of changes, files, config managed by Git
+
+ States of git
+    Working directory - git repository contains the actual git code
+    Staging area - pre-commit holding area
+    commit - Git repository (History)
+
+ remote repository - last stage (Github)
+ Master branch
+
+ untrack file - file that is not being added to github yet- is in the working directory
+
+---------------------------------------------------------------------------
+
+Install Git
+    a.- windows
+        git-scm.com installer
+    b.- mac
+        git version
+        git-scm.com (git for mac installer)
+
+
+---------------------------------------------------------------------------
+
+using git bash
+comands:
+    git version
+    git clone [url]             copy the repository to the local machine
+    git status                  tells the status of the local branch and working directory status
+    git add [file]              pass the untracked file to the staging area
+    git commit                  commit the new file(s) from the staging area into the local git repository
+    git push origin master      push the files added to the local repository to the branch we want (master this case)
+
+
+
