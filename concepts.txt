@@ -33,13 +33,20 @@ Install Git
 ---------------------------------------------------------------------------
 
 using git bash
-comands:
+commands:
     git version
     git clone [url]             copy the repository to the local machine
     git status                  tells the status of the local branch and working directory status
     git add [file]              pass the untracked file to the staging area
-    git commit                  commit the new file(s) from the staging area into the local git repository
+    git commit -m "comments"                  commit the new file(s) from the staging area into the local git repository
     git push origin master      push the files added to the local repository to the branch we want (master this case)
+
+ ---------------------------------------------------------------------------
+    git init [name project]     Start a new project
+    git init                    initialize a new git repository in the current directory
+    git add .                   add all the modified files to the git staging area
+
+    we can use fork in github to copy a git project into our repository
 
 
 
