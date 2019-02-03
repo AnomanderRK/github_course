@@ -44,9 +44,17 @@ commands:
  ---------------------------------------------------------------------------
     git init [name project]     Start a new project
     git init                    initialize a new git repository in the current directory
-    git add .                   add all the modified files to the git staging area
+    git add .                   add all the modified files to the git staging area (can add folders)
 
     we can use fork in github to copy a git project into our repository
 
 
+ ---------------------------------------------------------------------------
+    git pull origin master      update the local repository with all the changes from the master
+    git push origin master      update the master branch with the changes. Do this after git pull - best practice
+    git commit -am "commit text"    add the changes to the staging area and commit te file in the same line-
+                                    only files being tracked
+    git ls-files                list of tracked files
+    git reset HEAD <file>       Unstage a file from the stage area
+    git checkout -- <file>      Discard changes in working directory and returns the file to the last commited state
 
