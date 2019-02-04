@@ -57,4 +57,11 @@ commands:
     git ls-files                list of tracked files
     git reset HEAD <file>       Unstage a file from the stage area
     git checkout -- <file>      Discard changes in working directory and returns the file to the last commited state
+     ---------------------------------------------------------------------------
+
+    git mv file_name.ext new_file_name.ext  Rename or move  a file (keep track of the file, no matter the name
+    git add -A                  if we move or rename a file, using other that git command, we can still keep track of it
+    fit rm file_name.ext        remove a tracked file
+        git commit -m "deleting new file"   need to commit to save the changes
+
 
