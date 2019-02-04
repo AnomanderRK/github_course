@@ -57,11 +57,31 @@ commands:
     git ls-files                list of tracked files
     git reset HEAD <file>       Unstage a file from the stage area
     git checkout -- <file>      Discard changes in working directory and returns the file to the last commited state
-     ---------------------------------------------------------------------------
+  ---------------------------------------------------------------------------
 
     git mv file_name.ext new_file_name.ext  Rename or move  a file (keep track of the file, no matter the name
     git add -A                  if we move or rename a file, using other that git command, we can still keep track of it
     fit rm file_name.ext        remove a tracked file
         git commit -m "deleting new file"   need to commit to save the changes
+
+    git help log                # help from git
+  ---------------------------------------------------------------------------
+                    History
+    git log                     # shows all the commits
+    git log --follow -- path.file.to.follow         show all the commits related to file
+    git show <id>                                   #show the details of the commited id
+
+                custom commands
+    git config --global alias.hist "log --all --graph --decorate --oneline"
+                                    # creates a custom command with name list with the instruction in quotes
+                 # use the new command ---- git hist
+                 # config is the file where we saved the alias
+                 # modify this config file ----  editor ~/.gitconfig
+
+    .gitignore      # we can create a file named ,gitignore to list all the excluded files that we don't want to track
+             in file .gitignore we can use some patterns like
+                *.log       - exclude all the files with extension .log
+                directory/  - exclude the directory and its content
+
 
 
