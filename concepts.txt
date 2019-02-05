@@ -95,4 +95,16 @@ commands:
         WE CAN USE PYCHARM TO COMPARE FILES
             R-CLICK GIT COMPARE WITH...<SELECT A COMMIT TO COMPARE WITH>
 
+    ---------------------------------------------------------------------------
+        BRANCHES
+    git branch -a           # list all the branches
+            * indicate the current branch
+    git branch my_new_branch       # create a new branch wit name my_new_branch
+    git checkout my_new_branch      # change to my_new_branch
+    git branch -m my_new_branch newbranch    # rename the branch
+    git branch -d newbranch         # delete the branch. Need to be in another branch to be able to delete a branch
+    git checkout -b another_branch  # create another_branch and checkout
+
+    git merge branch_name           # merge the changes in branch_name into the current branch
+
 
