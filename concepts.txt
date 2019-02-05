@@ -82,6 +82,17 @@ commands:
              in file .gitignore we can use some patterns like
                 *.log       - exclude all the files with extension .log
                 directory/  - exclude the directory and its content
+---------------------------------------------------------------------------
 
+    git diff        # list the differences between a file that is in the working directory and the same file in the
+                    # staging area. Suppose we were modifying some file
+    git difftool    # graphic interface that shows the differences of the file in the working directory and the one
+                    # in the staging area
+    git diff HEAD   # shows the differences between the working directory and the last commit in the current branch
+    git difftool HEAD
+    git diff id_commit1 id_commit2  # compare two commits
+
+        WE CAN USE PYCHARM TO COMPARE FILES
+            R-CLICK GIT COMPARE WITH...<SELECT A COMMIT TO COMPARE WITH>
 
 
